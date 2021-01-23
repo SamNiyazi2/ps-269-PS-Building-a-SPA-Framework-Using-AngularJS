@@ -10,7 +10,8 @@ angular.module("psMenu").directive("psMenuItem", function () {
         require: '^psMenu',
         // Isolated scope
         scope: {
-            label: '@'
+            label: '@',
+            icon:'@'
         },
         templateUrl: 'ext-modules/psMenu/psMenuItemTemplate.html',
         link: function (scope, el, attr, ctrl) {
