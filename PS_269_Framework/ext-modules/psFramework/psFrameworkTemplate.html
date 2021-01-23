@@ -13,6 +13,15 @@
                 <p class="ps-logo-subtitle">{{subtitle}}</p>
             </div>
 
+            <div ng-if="isMenuButtonVisible" ng-click="menuButtonClickd()"
+                  class="ps-collapsed-menu pull-right">
+
+                <button type="button" class="btn ps-nav-button">
+                    <i class="fa fa-bars"></i>
+                </button>
+
+            </div>
+
         </div>
 
 
