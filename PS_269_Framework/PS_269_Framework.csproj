@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\app.css" />
     <Content Include="app\appModule.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -75,6 +76,7 @@
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="ext-modules\psDashboard\psDashboardModule.js" />
+    <Content Include="ext-modules\psFramework\psFramework.css" />
     <Content Include="ext-modules\psFramework\psFrameworkController.js" />
     <Content Include="ext-modules\psFramework\psFrameworkDirective.js" />
     <Content Include="ext-modules\psFramework\psFrameworkModule.js" />
