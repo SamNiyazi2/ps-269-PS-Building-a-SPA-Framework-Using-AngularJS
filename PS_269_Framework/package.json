@@ -1,0 +1,12 @@
+{
+  "name": "PS_269_Framework",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run-dev": "title %scriptKey_20210123_0922%&& lite-server  -o -p %p_8080%"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
