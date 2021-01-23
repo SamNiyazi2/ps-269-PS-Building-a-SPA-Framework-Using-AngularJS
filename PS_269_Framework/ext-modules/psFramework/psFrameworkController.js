@@ -5,5 +5,17 @@
 
 angular.module("psFramework").controller("psFrameworkController", ["$scope", function ($scope) {
 
+
+    $scope.$on('ps-menu-item-selected-event', function (evt, data) {
+
+        console.log('ps-menu-item-selected-event - listener - 20210123-1328');
+        console.log(evt);
+        console.log(data);
+
+        $scope.routeString = data.route_selected;
+
+    });
+
+
 }]);
 

@@ -14,7 +14,7 @@ angular.module('app').config(function ($provide) {
         return function (exception, cause) {
             console.log('20210123-1137: $exceptionHandler:');
             console.log(exception);
-            console.log(cause1);
+            console.log(cause);
 
             $delegate(exception, cause);
 
