@@ -12,7 +12,7 @@ angular.module("psMenu").directive("psMenu", function () {
 
         },
         transclude: true,
-        templateUrl: 'ext-module/psMenu/psMenuTemplate.html',
+        templateUrl: 'ext-modules/psMenu/psMenuTemplate.html',
         controller: 'psMenuController',
         link: function (scope, el, attr) {
 
