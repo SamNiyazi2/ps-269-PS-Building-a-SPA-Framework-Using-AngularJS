@@ -75,7 +75,10 @@
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="ext-modules\psDashboard\psDashboardModule.js" />
+    <Content Include="ext-modules\psFramework\psFrameworkController.js" />
+    <Content Include="ext-modules\psFramework\psFrameworkDirective.js" />
     <Content Include="ext-modules\psFramework\psFrameworkModule.js" />
+    <Content Include="ext-modules\psFramework\psFrameworkTemplate.html" />
     <Content Include="ext-modules\psMenu\psMenuModule.js" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
