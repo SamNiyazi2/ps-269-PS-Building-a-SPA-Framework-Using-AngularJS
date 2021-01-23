@@ -7,6 +7,10 @@ angular.module("psMenu").directive("psMenu", function () {
 
     return {
         // restrict: 'AE',
+        // Isolated scope
+        scope: {
+
+        },
         transclude: true,
         templateUrl: 'ext-module/psMenu/psMenuTemplate.html',
         controller: 'psMenuController',
