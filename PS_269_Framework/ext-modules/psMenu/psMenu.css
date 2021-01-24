@@ -4,10 +4,8 @@
     background-color: #333;
     color: #ccc;
     padding-left: 0;
-    width: 200px;
-    min-height: calc( 100vh - 130px);
-    padding-top: 30px;
 }
+
 
     .ps-menu-area ul {
         padding-left: 0;
@@ -17,8 +15,20 @@
         color: #ccc;
     }
 
+
+.ps-menu-area-vertical {
+    width: 200px;
+    min-height: calc( 100vh - 130px);
+    padding-top: 30px;
+}
+
+.ps-menu-area-horizontal {
+    width: 100%;
+    height: 40px;
+}
+
 @media screen and (min-width:768px) {
-    .ps-menu-area {
+    .ps-menu-area-vertical {
         min-height: calc( 100vh - 70px);
     }
 }
@@ -86,4 +96,12 @@
     color: #bbb;
     background-color: #333;
     border: 1px solid #999;
+}
+
+.ps-item-horizontal {
+    display: inline-block;
+    width: 165px !important;
+    margin-left: 20px;
+    margin-top: 5px;
+    line-height: 1.5em !important;
 }

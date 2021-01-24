@@ -22,6 +22,13 @@ angular.module("psMenu").controller("psMenuController", ["$scope", "$rootScope",
     };
 
 
+    // 01/24/2021 02:08 pm - SSN - [20210124-1349] - [002] - M04-07 - Styling the horizontal menu 
+    this.isVertical = function () {
+
+        return $scope.isVertical;
+    }
+
+
     this.setRoute = function (route) {
 
         $rootScope.$broadcast('ps-menu-item-selected-event', { route_selected: route });

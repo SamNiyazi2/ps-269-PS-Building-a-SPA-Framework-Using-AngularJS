@@ -18,12 +18,21 @@ angular.module('psMenu').directive('psMenuGroup', function () {
 
             scope.isOpen = false;
 
+
             scope.closeMenu = function () {
                 scope.isOpen = false;
             }
 
+
             scope.clicked = function () {
                 scope.isOpen = !scope.isOpen;
+            }
+
+
+            // 01/24/2021 02:14 pm - SSN - [20210124-1349] - [003] - M04-07 - Styling the horizontal menu 
+            scope.isVertical = function () {
+
+                return ctrl.isVertical();
             }
 
         }

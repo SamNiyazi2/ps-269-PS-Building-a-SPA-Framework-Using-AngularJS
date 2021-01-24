@@ -26,6 +26,16 @@ angular.module("psMenu").directive("psMenuItem", function () {
             }
 
 
+            // 01/24/2021 02:07 pm - SSN - [20210124-1349] - [001] - M04-07 - Styling the horizontal menu 
+            scope.isVertical = function () {
+
+                console.log('psMenuItemDirective isVertical 20210124-1420');
+                console.log('ctrl.isVertical:');
+                console.log(ctrl.isVertical());
+
+                return ctrl.isVertical();
+            }
+
 
             el.on('click', function (evt) {
 
