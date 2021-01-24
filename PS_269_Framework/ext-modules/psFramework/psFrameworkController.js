@@ -3,14 +3,16 @@
 
 "use strict";
 
-angular.module("psFramework").controller("psFrameworkController", ["$scope", "$window", "$timeout", function ($scope, $window, $timeout) {
+angular.module("psFramework").controller("psFrameworkController", ["$scope", "$window", "$timeout", "$rootScope", function ($scope, $window, $timeout, $rootScope) {
 
-    $scope.isMenuVisible = true;
-    $scope.isMenuButtonVisible = true;
+    $scope.isMenuVisible = false;
+    $scope.isMenuButtonVisible = false;
 
     $scope.$on('ps-menu-item-selected-event', function (evt, data) {
 
         $scope.routeString = data.route_selected;
+        checkWidth();
+        //broadcastMenuState();
 
     });
 
@@ -40,10 +42,30 @@ angular.module("psFramework").controller("psFrameworkController", ["$scope", "$w
         $scope.isMenuVisible = (width >= 768);
         $scope.isMenuButtonVisible = !$scope.isMenuVisible;
 
+        broadcastMenuState();
     };
 
 
-    $timeout(() => { checkWidth(); }, 0);
+    $scope.menuButtonClicked = function () {
+
+        $scope.isMenuVisible = !$scope.isMenuVisible;
+
+        broadcastMenuState();
+
+    }
+
+
+    var broadcastMenuState = function () {
+
+        $rootScope.$broadcast('ps-menu-show', {
+            show: $scope.isMenuVisible
+        });
+
+    };
+
+
+
+    $timeout(() => checkWidth(), 0);
 
 }]);
 

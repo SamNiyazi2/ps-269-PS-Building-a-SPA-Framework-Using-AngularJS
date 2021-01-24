@@ -5,7 +5,7 @@
     color: #ccc;
     padding-left: 0;
     width: 200px;
-    min-height: 100vh;
+    min-height: calc( 100vh - 130px);
     padding-top: 30px;
 }
 
@@ -16,6 +16,12 @@
     .ps-menu-area .btn:hover {
         color: #ccc;
     }
+
+@media screen and (min-width:768px) {
+    .ps-menu-area {
+        min-height: calc( 100vh - 70px);
+    }
+}
 
 .ps-menu {
     list-style-type: none;
@@ -48,11 +54,11 @@
     margin-right: 10px;
 }
 
-.ps-menu-active-indicator { 
-    float:right;
-    color:#ddd;
-    margin-right:0;
-    margin-top:8px;
+.ps-menu-active-indicator {
+    float: right;
+    color: #ddd;
+    margin-right: 0;
+    margin-top: 8px;
 }
 
 .ps-noselect {
