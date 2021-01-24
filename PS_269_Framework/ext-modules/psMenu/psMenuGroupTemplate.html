@@ -9,9 +9,10 @@
         {{label}}
         <i class="fa fa-chevron-left ps-group-indicator-left" ng-class="{'fa-rotate-270':isOpen}"></i>
     </div>
-    <!--Improvised-->
-    <div ng-show="isOpen">
-        <ul ng-transclude></ul>
-    </div>
+
 </li>
 
+ <!--We can't have this inside the li above since clicked "isOpen" will apply to both, when a sub-group.-->
+<div ng-show="isOpen" class="ps-subitem-section" >
+    <ul ng-transclude></ul>
+</div>
