@@ -69,7 +69,8 @@ angular.module("psFramework").controller("psFrameworkController", ["$scope", "$w
     var broadcastMenuState = function () {
 
         $rootScope.$broadcast('ps-menu-show', {
-            show: $scope.isMenuVisible
+            show: $scope.isMenuVisible,
+            allowHorizontalToggle: !$scope.isMenuButtonVisible
         });
 
     };

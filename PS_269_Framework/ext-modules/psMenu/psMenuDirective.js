@@ -3,7 +3,7 @@
 
 "use strict";
 
-angular.module("psMenu").directive("psMenu", function () {
+angular.module("psMenu").directive("psMenu", ["$timeout", function ($timeout) {
 
     return {
         // restrict: 'AE',
@@ -16,8 +16,21 @@ angular.module("psMenu").directive("psMenu", function () {
         controller: 'psMenuController',
         link: function (scope, el, attr) {
 
+            // 01/24/2021 04:55 pm - SSN - [20210124-1536] - [001] - M04-10 - Making the menu responsive
+            // Setting a default menu item:
+            var item = el.find('.ps-selectable-item:first');
+
+            if (item.length > 0) {
+
+                $timeout(() => {
+                    item.trigger('click');
+                });
+
+            }
 
         }
     };
 
-});
+
+
+}]);
