@@ -23,9 +23,6 @@ angular.module("psFramework").controller("psFrameworkController", ["$scope", "$w
     // 01/24/2021 01:44 pm - SSN - [20210124-1314] - [003] - M04-06 - Creating a horizontal menu
     $scope.$on('ps-menu-orientation-changed-event', function (evt, data) {
 
-        console.log('psFrameworkController: on ps-menu-orientation-changed-event 20210124-1347')
-        console.log(data);
-
         $scope.isMenuVertical = data.isMenuVertical;
 
     });

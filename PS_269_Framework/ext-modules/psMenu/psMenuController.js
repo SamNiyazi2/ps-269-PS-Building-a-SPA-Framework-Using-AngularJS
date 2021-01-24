@@ -45,8 +45,9 @@ angular.module("psMenu").controller("psMenuController", ["$scope", "$rootScope",
 
     // 01/24/2021 01:37 pm - SSN - [20210124-1314] - [001] - M04-06 - Creating a horizontal menu
     $scope.toggleMenuOrientation = function () {
+
         $scope.isVertical = !$scope.isVertical;
-        console.log('psMenuController:toggleMenuOrientation - 20210124-1346');
+
         $rootScope.$broadcast('ps-menu-orientation-changed-event', {
             isMenuVertical: $scope.isVertical
         });
