@@ -29,7 +29,8 @@ angular.module("psMenu").directive("psMenuItem", function () {
             // 01/24/2021 02:07 pm - SSN - [20210124-1349] - [001] - M04-07 - Styling the horizontal menu 
             scope.isVertical = function () {
 
-                return ctrl.isVertical();
+                // 01/24/2021 02:55 pm - SSN - [20210124-1445] - [001] - M04-09 - Controlling the popup menu
+                return ctrl.isVertical() || el.parents('.ps-subitem-section').length > 0;
             }
 
 

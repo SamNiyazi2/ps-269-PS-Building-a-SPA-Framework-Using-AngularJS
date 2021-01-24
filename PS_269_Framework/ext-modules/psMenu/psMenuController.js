@@ -36,6 +36,12 @@ angular.module("psMenu").controller("psMenuController", ["$scope", "$rootScope",
     };
 
 
+    // 01/24/2021 03:23 pm - SSN - [20210124-1445] - [006] - M04-09 - Controlling the popup menu
+    this.setOpenMenuScope = function (scope) {
+        $scope.openMenuScope = scope
+    }
+
+
     $scope.$on('ps-menu-show', function (evt, data) {
 
         $scope.showMenu = data.show;
@@ -46,11 +52,43 @@ angular.module("psMenu").controller("psMenuController", ["$scope", "$rootScope",
     // 01/24/2021 01:37 pm - SSN - [20210124-1314] - [001] - M04-06 - Creating a horizontal menu
     $scope.toggleMenuOrientation = function () {
 
+
+        // 01/24/2021 03:25 pm - SSN - [20210124-1445] - [007] - M04-09 - Controlling the popup menu
+        if ($scope.openMenuScope) {
+            $scope.openMenuScope.closeMenu();
+        }
+
         $scope.isVertical = !$scope.isVertical;
 
         $rootScope.$broadcast('ps-menu-orientation-changed-event', {
             isMenuVertical: $scope.isVertical
         });
+
+
+
+        // 01/24/2021 03:25 pm - SSN - [20210124-1445] - [008] - M04-09 - Controlling the popup menu
+        angular.element(document).bind('click', function (e) {
+
+
+            if ($scope.openMenuScope && !$scope.isVertical) {
+
+                if ($(e.target).parent().hasClass('ps-selectable-item')) return;
+
+                $scope.$apply(function () {
+
+                    $scope.openMenuScope.closeMenu();
+
+                });
+
+                e.preventDefault();
+                e.stopPropagation();
+
+            }
+
+        });
+
+
+
     };
 
 

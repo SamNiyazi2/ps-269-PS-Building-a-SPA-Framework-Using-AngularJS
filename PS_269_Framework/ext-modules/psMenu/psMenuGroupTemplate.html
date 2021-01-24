@@ -13,6 +13,6 @@
 </li>
 
 <!--We can't have this inside the li above since clicked "isOpen" will apply to both, when a sub-group.-->
-<div ng-show="isOpen" class="ps-subitem-section">
+<div ng-show="isOpen" class="ps-subitem-section" ng-class="{'ps-popup-menu':!isVertical()}">
     <ul ng-transclude></ul>
 </div>
