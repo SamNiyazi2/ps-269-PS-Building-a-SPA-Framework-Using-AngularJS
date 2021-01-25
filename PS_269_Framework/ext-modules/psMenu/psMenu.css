@@ -121,3 +121,14 @@
     width: 200px;
     padding-left: 0;
 }
+
+.ps-fade-in-animation {
+    -webkit-transition: all 0.7s ease-out;
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+}
+
+    .ps-fade-in-animation.ng-hide {
+        opacity: 0;
+    }
