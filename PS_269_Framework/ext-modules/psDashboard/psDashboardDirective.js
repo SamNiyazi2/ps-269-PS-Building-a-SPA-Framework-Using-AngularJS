@@ -9,6 +9,17 @@ angular.module('psDashboard').directive('psDashboard', function () {
 
         link: function (scope) {
 
+
+            // 01/25/2021 01:48 pm - SSN - [20210125-1346] - [001] - M06-08 - Adding widgets to a dashboard
+            scope.addNewWidget = function (widget) {
+
+                let newWidget = angular.copy(widget.settings);
+
+                scope.widgets.push(newWidget);
+
+            };
+
+
         }
 
     };

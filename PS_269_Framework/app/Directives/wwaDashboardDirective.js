@@ -36,7 +36,7 @@ angular.module("app").directive("wwaDashboard", [function () {
                         sizeY: 3,
                         minSizeX: 2,
                         minxSizeY: 2,
-                        template: '<wwma-temperature></wwa-temperature>',
+                        template: '<wwa-temperature></wwa-temperature>',
                         widgetSettings: {
                             id: 1000
                         }
@@ -50,7 +50,7 @@ angular.module("app").directive("wwaDashboard", [function () {
                         sizeY: 3,
                         minSizeX: 2,
                         minxSizeY: 2,
-                        template: '<wwma-inventory></wwa-inventory>',
+                        template: '<wwa-inventory></wwa-inventory>',
                         widgetSettings: {
                             id:1002
                         }
@@ -63,7 +63,7 @@ angular.module("app").directive("wwaDashboard", [function () {
                         sizeY: 3,
                         minSizeX: 2,
                         minxSizeY: 2,
-                        template: '<wwma-employee></wwa-employee>',
+                        template: '<wwa-employee></wwa-employee>',
                         widgetSettings: {
                             id: 5000
                         }

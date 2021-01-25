@@ -37,7 +37,7 @@ ps-dashboard {
     border-bottom: 1px solid #444;
     color: white;
     background-color: #777;
-    margin:-20px;
+    margin: -20px;
     margin-bottom: 20px;
     min-height: 50px;
     padding: 8px;
@@ -45,5 +45,27 @@ ps-dashboard {
 }
 
 .ps-dashboard-controls {
-    float:right;
+    float: right;
+}
+
+
+.ps-widget-menu-area {
+    position: absolute;
+    top: 0;
+    right: 8px;
+    font-size: 22px;
+}
+
+
+    .ps-widget-menu-area .dropdown-menu {
+        left: -20px;
+        padding-left: 15px;
+    }
+
+    .ps-widget-menu-area a {
+        color: white;
+    }
+
+.ps-widget-menu-area i {
+    cursor: pointer;
 }
