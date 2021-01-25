@@ -85,3 +85,19 @@
     font-size: 26px;
     color: #777
 }
+
+
+.ps-view {
+    margin-left: 200px;
+    padding: 20px;
+    background-color: #ccc;
+    /*  min-height: calc( 100vh - 70px);*/
+    overflow: auto;
+}
+
+.ps-view-full-width {
+    margin-left: 0;
+    /*    min-height: calc( 100vh - 150px)!important;*/
+}
+
+ 

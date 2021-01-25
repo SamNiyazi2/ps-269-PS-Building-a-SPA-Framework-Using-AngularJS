@@ -35,7 +35,7 @@ angular.module("app").config(["$routeProvider", function ($routeProvider) {
     });
 
 
-    $routeProvider.otherwise({ redirecTo: '/dashboard' });
+    $routeProvider.otherwise({ redirectTo: '/dashboard' });
 
 
 }]);

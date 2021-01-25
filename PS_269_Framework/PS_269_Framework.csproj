@@ -71,6 +71,9 @@
     <Content Include="app\appConfig.js" />
     <Content Include="app\appModule.js" />
     <Content Include="app\appRouteConfig.js" />
+    <Content Include="app\Directives\wwaDashboardDirective.js" />
+    <Content Include="app\Directives\wwaGuidesDirective.js" />
+    <Content Include="app\Directives\wwaLocationsDirective.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />

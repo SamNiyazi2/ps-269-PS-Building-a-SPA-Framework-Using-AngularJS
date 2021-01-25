@@ -17,6 +17,7 @@
 
 
 .ps-menu-area-vertical {
+    float: left;
     width: 200px;
     min-height: calc( 100vh - 130px);
     padding-top: 30px;
@@ -131,4 +132,5 @@
 
     .ps-fade-in-animation.ng-hide {
         opacity: 0;
+
     }
