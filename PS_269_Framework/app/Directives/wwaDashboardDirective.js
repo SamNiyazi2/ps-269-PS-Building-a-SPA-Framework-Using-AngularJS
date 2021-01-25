@@ -9,7 +9,7 @@ angular.module("app").directive("wwaDashboard", [function () {
         scope: {
 
         },
-        template: '<h1>Dashboard page</h1>'
+        template: '<ps-dashboard></ps-dashboard>'
     };
 
 }]);

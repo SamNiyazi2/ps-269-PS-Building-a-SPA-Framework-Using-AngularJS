@@ -60,10 +60,6 @@ angular.module("psFramework").controller("psFrameworkController", ["$scope", "$w
 
     let doCheckWidth = function (caller, timeoutDefault = 20) {
 
-        console.log("doCheckWidth:");
-        console.log('Caller: [', caller, ']');
-        console.log('timeoutDefault: [', timeoutDefault, ']');
-
         $timeout(() => {
 
             $scope.$apply(function () {
@@ -88,15 +84,9 @@ angular.module("psFramework").controller("psFrameworkController", ["$scope", "$w
 
         let totalHeight = ps_title_bar_height;
 
-        console.log('ps_menu_area_height :');
-        console.log(ps_menu_area_height, $scope.isMenuVisible, $scope.isMenuVertical);
-
-        if ((!$scope.isMenuVertical && $scope.isMenuVisible))
-            totalHeight += ps_menu_area_height;
+        if ((!$scope.isMenuVertical && $scope.isMenuVisible)) totalHeight += ps_menu_area_height;
 
         let string1 = 'calc( 100vh - ' + ((totalHeight + 2) + 'px') + ')';
-        console.log('string1:');
-        console.log(string1);
 
         $('.ps-view').css({ 'minHeight': string1 });
 

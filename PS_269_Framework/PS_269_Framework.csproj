@@ -81,7 +81,10 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="ext-modules\psDashboard\psDashboard.css" />
+    <Content Include="ext-modules\psDashboard\psDashboardDirective.js" />
     <Content Include="ext-modules\psDashboard\psDashboardModule.js" />
+    <Content Include="ext-modules\psDashboard\psDashboardTemplate.html" />
     <Content Include="ext-modules\psFramework\psFramework.css" />
     <Content Include="ext-modules\psFramework\psFrameworkController.js" />
     <Content Include="ext-modules\psFramework\psFrameworkDirective.js" />
