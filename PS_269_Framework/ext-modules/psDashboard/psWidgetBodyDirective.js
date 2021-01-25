@@ -16,6 +16,17 @@ angular.module("psDashboard").directive("psWidgetBody", ["$compile", function ($
             $compile(newElement)(scope);
 
 
+            // 01/25/2021 02:59 pm - SSN - [20210125-1455] - [001] - M06-10 - Closing widgets
+            scope.close = function () {
+
+                let widgetIndex = scope.widgets.indexOf(scope.item);
+
+                if (widgetIndex > -1) {
+
+                    scope.widgets.splice(widgetIndex, 1);
+                }
+
+            }
 
         }
     }
