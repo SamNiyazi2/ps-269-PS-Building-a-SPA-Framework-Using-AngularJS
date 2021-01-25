@@ -26,6 +26,54 @@ angular.module("app").directive("wwaDashboard", [function () {
                 swapping: false
             };
 
+            // 01/25/2021 01:30 pm - SSN - [20210125-1316] - [001] - M06-07 - A button to add widgets
+
+            scope.widgetDefinitions = [
+                {
+                    title: "Temperature",
+                    settings: {
+                        sizeX: 3,
+                        sizeY: 3,
+                        minSizeX: 2,
+                        minxSizeY: 2,
+                        template: '<wwma-temperature></wwa-temperature>',
+                        widgetSettings: {
+                            id: 1000
+                        }
+
+                    }
+                },
+                {
+                    title: "Inventoty",
+                    settings: {
+                        sizeX: 5,
+                        sizeY: 3,
+                        minSizeX: 2,
+                        minxSizeY: 2,
+                        template: '<wwma-inventory></wwa-inventory>',
+                        widgetSettings: {
+                            id:1002
+                        }
+                    }
+                },
+                {
+                    title: "Employee",
+                    settings: {
+                        sizeX: 5,
+                        sizeY: 3,
+                        minSizeX: 2,
+                        minxSizeY: 2,
+                        template: '<wwma-employee></wwa-employee>',
+                        widgetSettings: {
+                            id: 5000
+                        }
+
+                    }
+                }
+
+
+            ];
+
 
             scope.widgets = [
                 {
