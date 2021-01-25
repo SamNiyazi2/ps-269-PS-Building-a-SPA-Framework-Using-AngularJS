@@ -38,7 +38,9 @@ angular.module("app").directive("wwaDashboard", [function () {
                         minxSizeY: 2,
                         template: '<wwa-temperature></wwa-temperature>',
                         widgetSettings: {
-                            id: 1000
+                            id: 1000,
+                            templateUrl: 'app/dialogs/wwaSelectLocationTemplate.html',
+                            controller: 'wwaSelectLocationController'
                         }
 
                     }
@@ -52,7 +54,10 @@ angular.module("app").directive("wwaDashboard", [function () {
                         minxSizeY: 2,
                         template: '<wwa-inventory></wwa-inventory>',
                         widgetSettings: {
-                            id:1002
+                            id: 1002,
+                            templateUrl: 'app/dialogs/wwaSelectLocationTemplate.html',
+                            controller: 'wwaSelectLocationController'
+
                         }
                     }
                 },
@@ -65,7 +70,10 @@ angular.module("app").directive("wwaDashboard", [function () {
                         minxSizeY: 2,
                         template: '<wwa-employee></wwa-employee>',
                         widgetSettings: {
-                            id: 5000
+                            id: 5000,
+                            templateUrl: 'app/dialogs/wwaSelectEmployeeTemplate.html',
+                            controller: 'wwaSelectEmployeeController'
+
                         }
 
                     }
@@ -74,47 +82,40 @@ angular.module("app").directive("wwaDashboard", [function () {
 
             ];
 
-
-            scope.widgets = [
-                {
-                    title: "Title 1",
-                    sizeX: 3,
-                    sizeY: 3,
-                    row: 0,
-                    col: 0,
-                    template: '<wwa-temperature></wwa-temperature>',
-                    widgetSettings: {
-                        id: 1000
-                    }
-                }
-
-                ,
-                {
-                    title: "Second-002",
-                    sizeX: 5,
-                    sizeY: 3,
-                    row: 0,
-                    col: 5,
-                    template: '<wwa-employee></wwa-employee>',
-                    widgetSettings: {
-                        id: 5001
-                    }
-                }
-                ,
-                {
-                    title: "Third-003-Guide",
-                    sizeX: 5,
-                    sizeY: 3,
-                    row: 3,
-                    col: 5,
-                    template: '<wwa-inventory></wwa-inventory>',
-                    widgetSettings: {
-                        id: 1002
-                    }
-                }
+            scope.widgets = [];
 
 
-            ];
+
+            let xCounter = 0;
+
+            for (let x = 0; x < 2; x++) {
+
+                angular.forEach(scope.widgetDefinitions, tempWidget => {
+
+                    xCounter++;
+
+                    let var1 = angular.copy(tempWidget.settings);
+                    var1.title = var1.title + " (" + xCounter + ")";
+                    
+
+                    scope.widgets.push(var1);
+                });
+
+
+            }
+
+
+            //{
+            //    title: "Third-003-Guide",
+            //    sizeX: 5,
+            //    sizeY: 3,
+            //    row: 3,
+            //    col: 5,
+            //    template: '<wwa-inventory></wwa-inventory>',
+            //    widgetSettings: {
+            //        id: 1002
+            //    }
+            //}
 
 
         }

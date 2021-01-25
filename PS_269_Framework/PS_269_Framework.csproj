@@ -71,6 +71,10 @@
     <Content Include="app\appConfig.js" />
     <Content Include="app\appModule.js" />
     <Content Include="app\appRouteConfig.js" />
+    <Content Include="app\dialogs\wwaSelectEmployeeController.js" />
+    <Content Include="app\dialogs\wwaSelectEmployeeTemplate.html" />
+    <Content Include="app\dialogs\wwaSelectLocationController.js" />
+    <Content Include="app\dialogs\wwaSelectLocationTemplate.html" />
     <Content Include="app\Directives\wwaDashboardDirective.js" />
     <Content Include="app\Directives\wwaGuidesDirective.js" />
     <Content Include="app\Directives\wwaLocationsDirective.js" />
@@ -145,6 +149,10 @@
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular-route.js" />
     <Content Include="Scripts\angular-route.min.js" />
+    <Content Include="Scripts\angular-ui\ui-bootstrap-tpls.js" />
+    <Content Include="Scripts\angular-ui\ui-bootstrap-tpls.min.js" />
+    <Content Include="Scripts\angular-ui\ui-bootstrap.js" />
+    <Content Include="Scripts\angular-ui\ui-bootstrap.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\angular.min.js.map" />
