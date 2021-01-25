@@ -74,6 +74,7 @@
     <Content Include="app\Directives\wwaDashboardDirective.js" />
     <Content Include="app\Directives\wwaGuidesDirective.js" />
     <Content Include="app\Directives\wwaLocationsDirective.js" />
+    <Content Include="Content\angular-gridster.min.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -109,6 +110,7 @@
     <Content Include="index.html" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
+    <Content Include="Scripts\angular-gridster.min.js" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular-route.js" />
     <Content Include="Scripts\angular-route.min.js" />
