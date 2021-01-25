@@ -6,7 +6,28 @@ ps-dashboard {
 }
 
 .gridster .gridster-item {
-
     box-shadow: 0 0 5px rgba(0,0,0,0.3);
-    background-color:white;
+    background-color: white;
 }
+
+.ps-widget-header {
+    position: relative;
+    color: white;
+    background-color: #444;
+    font-size: 18px;
+    border-bottom: 1px solid black;
+    min-height: 34px;
+    padding: 4px 8px 2px 8px;
+}
+
+.ps-widget-header-buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+    .ps-widget-header-buttons .btn {
+        margin: 5px 4px 5px 0px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }

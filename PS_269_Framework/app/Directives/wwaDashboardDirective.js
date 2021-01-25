@@ -27,11 +27,13 @@ angular.module("app").directive("wwaDashboard", [function () {
 
             scope.widgets = [
                 {
+                    title: "Title 1",
                     sizeX: 3,
                     sizeY: 3,
                     row: 0,
                     col: 0
                 }, {
+                    title: "Title 2",
                     sizeX: 2,
                     sizeY: 4,
                     row: 0,
