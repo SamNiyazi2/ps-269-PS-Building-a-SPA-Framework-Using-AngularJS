@@ -119,7 +119,7 @@ angular.module("app").factory("dataService", ["$timeout", function ($timeout) {
     }
 
     var getLocation = function (id) {
-        return $timeout(() => locations.filter(r => r.id == id, 500);
+        return $timeout(() => locations.filter(r => r.id == id), 500);
     }
 
     var getemployees = function () {
@@ -127,7 +127,7 @@ angular.module("app").factory("dataService", ["$timeout", function ($timeout) {
     }
 
     var getemployee = function (id) {
-        return $timeout(() => employees.filter(r => r.id == id, 500));
+        return $timeout(() => employees.filter(r => r.id == id), 500);
     }
 
 
