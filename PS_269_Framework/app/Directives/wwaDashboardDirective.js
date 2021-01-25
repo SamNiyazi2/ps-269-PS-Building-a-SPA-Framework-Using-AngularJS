@@ -12,6 +12,8 @@ angular.module("app").directive("wwaDashboard", [function () {
         template: '<ps-dashboard></ps-dashboard>',
         link: function (scope) {
 
+            scope.dashboardTitle = "My first Dashboard";
+
             // 01/25/2021 08:13 am - SSN - [20210125-0809] - [001] - M05-08 - Dashboard options -- Gridster options
 
             // https://github.com/manifestwebdesign/angular-gridster#configuration
