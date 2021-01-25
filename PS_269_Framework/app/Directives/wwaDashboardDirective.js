@@ -33,13 +33,36 @@ angular.module("app").directive("wwaDashboard", [function () {
                     sizeX: 3,
                     sizeY: 3,
                     row: 0,
-                    col: 0
-                }, {
-                    title: "Title 2",
-                    sizeX: 2,
-                    sizeY: 4,
+                    col: 0,
+                    template: '<wwa-temperature></wwa-temperature>',
+                    widgetSettings: {
+                        id: 1000
+                    }
+                }
+
+                ,
+                {
+                    title: "Second-002",
+                    sizeX: 5,
+                    sizeY: 3,
                     row: 0,
-                    col: 5
+                    col: 5,
+                    template: '<wwa-employee></wwa-employee>',
+                    widgetSettings: {
+                        id: 5001
+                    }
+                }
+                ,
+                {
+                    title: "Third-003-Guide",
+                    sizeX: 5,
+                    sizeY: 3,
+                    row: 3,
+                    col: 5,
+                    template: '<wwa-inventory></wwa-inventory>',
+                    widgetSettings: {
+                        id: 1002
+                    }
                 }
 
 

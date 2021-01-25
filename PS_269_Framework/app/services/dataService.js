@@ -119,22 +119,28 @@ angular.module("app").factory("dataService", ["$timeout", function ($timeout) {
     }
 
     var getLocation = function (id) {
-        return $timeout(() => locations.filter(r => r.id == id), 500);
+        return $timeout(() => {
+            let _locations = locations.filter(r => r.id == id);
+            return _locations.length == 1 ? _locations[0] : undefined;
+        }, 500);
     }
 
-    var getemployees = function () {
+    var getEmployees = function () {
         return $timeout(() => employees, 500);
     }
 
-    var getemployee = function (id) {
-        return $timeout(() => employees.filter(r => r.id == id), 500);
+    var getEmployee = function (id) {
+        return $timeout(() => {
+            let _employees = employees.filter(r => r.id == id);
+            return _employees.length == 1 ? _employees[0] : undefined;
+        }, 500);
     }
 
 
     return {
         getLocations: getLocations,
         getLocation: getLocation,
-        getemployee: getemployee,
-        getemployees: getemployees
+        getEmployee: getEmployee,
+        getEmployees: getEmployees
     }
 }]);
