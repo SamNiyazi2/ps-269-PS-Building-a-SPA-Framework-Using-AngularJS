@@ -74,6 +74,7 @@
     <Content Include="app\Directives\wwaDashboardDirective.js" />
     <Content Include="app\Directives\wwaGuidesDirective.js" />
     <Content Include="app\Directives\wwaLocationsDirective.js" />
+    <Content Include="app\services\dataService.js" />
     <Content Include="Content\angular-gridster.min.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
