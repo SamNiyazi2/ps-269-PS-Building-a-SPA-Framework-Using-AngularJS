@@ -66,6 +66,13 @@ ps-dashboard {
         color: white;
     }
 
-.ps-widget-menu-area i {
-    cursor: pointer;
+    .ps-widget-menu-area i {
+        cursor: pointer;
+    }
+
+
+/* // 01/25/2021 07:34 pm - SSN - [20210125-1825] - [003] - M06-12 - Updating widget settings -Mobile fix
+ */
+.dropdown-backdrop {
+    position: static;
 }

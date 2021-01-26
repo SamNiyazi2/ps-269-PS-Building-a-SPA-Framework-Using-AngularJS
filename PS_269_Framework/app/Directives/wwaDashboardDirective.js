@@ -85,37 +85,30 @@ angular.module("app").directive("wwaDashboard", [function () {
             scope.widgets = [];
 
 
+            let autoDemoLoad = false;
 
-            let xCounter = 0;
+            if (autoDemoLoad) {
 
-            for (let x = 0; x < 2; x++) {
+                let xCounter = 0;
 
-                angular.forEach(scope.widgetDefinitions, tempWidget => {
+                for (let x = 0; x < 2; x++) {
 
-                    xCounter++;
+                    angular.forEach(scope.widgetDefinitions, tempWidget => {
 
-                    let var1 = angular.copy(tempWidget.settings);
-                    var1.title = var1.title + " (" + xCounter + ")";
-                    
+                        xCounter++;
 
-                    scope.widgets.push(var1);
-                });
+                        let var1 = angular.copy(tempWidget.settings);
+                        var1.title = var1.title + " (" + xCounter + ")";
 
+
+                        scope.widgets.push(var1);
+                    });
+
+
+                }
 
             }
 
-
-            //{
-            //    title: "Third-003-Guide",
-            //    sizeX: 5,
-            //    sizeY: 3,
-            //    row: 3,
-            //    col: 5,
-            //    template: '<wwa-inventory></wwa-inventory>',
-            //    widgetSettings: {
-            //        id: 1002
-            //    }
-            //}
 
 
         }

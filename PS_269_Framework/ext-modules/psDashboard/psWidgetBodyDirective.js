@@ -42,10 +42,10 @@ angular.module("psDashboard").directive("psWidgetBody", ["$compile", "$modal", f
 
             }
 
-             
+
 
             scope.getBackupgroundImagestyle = function () {
-                  
+
                 if (scope.selectedLocation && scope.selectedLocation.image) {
                     let tempValue2 = "url(/images/" + (scope.selectedLocation.image) + ")";
                     return { "background-image": tempValue2 };
@@ -59,6 +59,14 @@ angular.module("psDashboard").directive("psWidgetBody", ["$compile", "$modal", f
                 return {};
 
             }
+
+
+            // 01/25/2021 07:36 pm - SSN - [20210125-1825] - [005] - M06-12 - Updating widget settings -Mobile fix
+            scope.iconClicked = function () {
+                // Empty body.
+                // This function is used by ng-click in the template
+                // so that icon clicks are't intercepted by widgets
+            };
 
         }
     }
