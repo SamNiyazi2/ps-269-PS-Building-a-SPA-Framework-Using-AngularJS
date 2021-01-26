@@ -11,8 +11,20 @@ body {
 .sign-in-form {
     background-color: white;
     padding: 80px;
-
 }
-.sign-in-form form {
-margin:20px auto;
+
+    .sign-in-form form {
+        margin: 20px auto;
+    }
+
+@media screen and ( max-width:360px) {
+
+
+    .sign-in-form {
+        padding: 30px;
+    }
+
+        .sign-in-form form {
+            margin: 10px auto;
+        }
 }

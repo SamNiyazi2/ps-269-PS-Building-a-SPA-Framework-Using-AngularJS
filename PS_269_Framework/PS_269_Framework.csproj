@@ -107,6 +107,10 @@
     <Content Include="ext-modules\psFramework\psFrameworkDirective.js" />
     <Content Include="ext-modules\psFramework\psFrameworkModule.js" />
     <Content Include="ext-modules\psFramework\psFrameworkTemplate.html" />
+    <Content Include="ext-modules\psFramework\psUserProfile\psUserProfileDirective.js" />
+    <Content Include="ext-modules\psFramework\psUserProfile\psUserProfileSmallDirective.js" />
+    <Content Include="ext-modules\psFramework\psUserProfile\psUserProfileSmallTemplate.html" />
+    <Content Include="ext-modules\psFramework\psUserProfile\psUserProfileTemplate.html" />
     <Content Include="ext-modules\psMenu\psMenu.css" />
     <Content Include="ext-modules\psMenu\psMenuController.js" />
     <Content Include="ext-modules\psMenu\psMenuDirective.js" />
