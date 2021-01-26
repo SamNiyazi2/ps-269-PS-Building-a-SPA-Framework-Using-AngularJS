@@ -7,7 +7,12 @@
     </div>
 
     <div class="wwa-temperature-body" ng-style="getBackupgroundImagestyle()">
-        <div class="wwa-temperature-view">
+
+        <div ng-if="!isLoaded">
+            <i class="fa fa-refresh fa-2x fa-spin"></i>
+        </div>
+
+        <div ng-if="isLoaded" class="wwa-temperature-view">
             <div class="wwa-temperature-river-name">
                 {{ selectedLocation.name }}
             </div>

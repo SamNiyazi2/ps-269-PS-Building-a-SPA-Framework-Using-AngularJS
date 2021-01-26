@@ -12,13 +12,17 @@ angular.module('app').directive('wwaTemperature', ["dataService", function (data
 
         link: function (scope, elem, attrs) {
 
-            // 01/25/2021 11:25 am - SSN - [20210125-1023] - [002] - M06-05 - Compiling widget content
+            // 01/26/2021 09:21 am - SSN - [20210126-0915] - [001] - M07-03 - Loading indicator for widgets
+            scope.isLoaded = false;
 
+
+            // 01/25/2021 11:25 am - SSN - [20210125-1023] - [002] - M06-05 - Compiling widget content
 
             dataService.getLocation(scope.item.widgetSettings.id)
                 .then(data => {
 
                     scope.selectedLocation = data;
+                    scope.isLoaded = true;
 
                 }, errorResponse => {
 

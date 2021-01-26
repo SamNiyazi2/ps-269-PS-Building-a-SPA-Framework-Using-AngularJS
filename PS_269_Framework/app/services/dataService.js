@@ -122,7 +122,7 @@ angular.module("app").factory("dataService", ["$timeout", function ($timeout) {
         return $timeout(() => {
             let _locations = locations.filter(r => r.id == id);
             return _locations.length == 1 ? _locations[0] : undefined;
-        }, 500);
+        }, 2000);
     }
 
     var getEmployees = function () {

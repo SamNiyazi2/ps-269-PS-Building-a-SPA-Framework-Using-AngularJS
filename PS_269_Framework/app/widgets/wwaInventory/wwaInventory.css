@@ -1,8 +1,8 @@
 ﻿.wwa-inventory-widget {
-   height: 100%;
-   width: 100%;
-   font-size: 16px;
-   min-height: 200px;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    min-height: 200px;
 }
 
 .wwa-inventory-heading {
@@ -43,7 +43,7 @@
     width: 350px;
     margin: auto;
     top: 5px;
-    left: 5px; 
+    left: 5px;
     right: 5px;
     background-color: rgba(255,255,255,.7);
     border: 1px solid black;
@@ -56,18 +56,48 @@
     color: black;
 }
 
-.wwa-inventory-item img {
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 0;
-    width: 40px;
-    height: 40px;
-}
+    .wwa-inventory-item img {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 0;
+        width: 40px;
+        height: 40px;
+    }
 
 .wwa-inventory-amount {
     font-size: 25px;
 }
+
 .wwa-inventory-caption {
     display: block;
     margin-top: -5px;
+}
+
+@media screen and (max-width:360px) {
+
+    .wwa-inventory-area {
+        width: 100%;
+    }
+
+    .wwa-inventory-item {
+        margin: 0 8px;
+        font-size: 12px;
+    }
+
+        .wwa-inventory-item img {
+            width: 24px;
+            height: 24px;
+        }
+
+    .wwa-inventory-amount {
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    .wwa-inventory-caption {
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 2px;
+        margin-bottom: 4px;
+    }
 }
