@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="app\app.css" />
     <Content Include="app\appConfig.js" />
+    <Content Include="app\appController.js" />
     <Content Include="app\appModule.js" />
     <Content Include="app\appRouteConfig.js" />
     <Content Include="app\dialogs\wwaSelectEmployeeController.js" />
