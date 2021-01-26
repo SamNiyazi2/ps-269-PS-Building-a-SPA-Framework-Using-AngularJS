@@ -6,20 +6,10 @@
     padding-left: 0;
 }
 
-
-    .ps-menu-area ul {
-        padding-left: 0;
-    }
-
-    .ps-menu-area .btn:hover {
-        color: #ccc;
-    }
-
-
 .ps-menu-area-vertical {
     float: left;
     width: 200px;
-    min-height: calc( 100vh - 130px);
+    min-height: 100vh;
     padding-top: 30px;
 }
 
@@ -28,10 +18,12 @@
     height: 40px;
 }
 
-@media screen and (min-width:768px) {
-    .ps-menu-area-vertical {
-        min-height: calc( 100vh - 70px);
-    }
+.ps-menu-area ul {
+    padding-left: 0;
+}
+
+.ps-menu-area .btn:hover {
+    color: #ccc;
 }
 
 .ps-menu {
@@ -39,23 +31,22 @@
     vertical-align: top;
 }
 
-    .ps-menu ul {
-        display: inline;
-        list-style-type: none;
-        padding-left: 0;
-    }
+.ps-menu ul {
+    display: inline;
+    list-style-type: none;
+    padding-left: 0;
+}
 
-    .ps-menu li {
-        line-height: 3em;
-        cursor: pointer;
-    }
+.ps-menu li {
+    line-height: 3em;
+    cursor: pointer;
+}
 
-        .ps-menu li div {
-            display: inline-block;
-            width: 90%;
-            padding-left: 16px;
-        }
-
+.ps-menu li div {
+    display: inline-block;
+    width: 90%;
+    padding-left: 16px;
+}
 
 .ps-selectable-item:hover {
     background-color: #555;
@@ -99,19 +90,17 @@
     border: 1px solid #999;
 }
 
-
 .ps-layout-button-horizontal {
     position: absolute;
     top: -6px;
     right: 10px;
 }
 
-
 .ps-item-horizontal {
     display: inline-block;
     width: 165px !important;
     margin-left: 20px;
-    margin-top: 5px;
+    margin-top: 10px;
     line-height: 1.5em !important;
 }
 
@@ -124,13 +113,11 @@
 }
 
 .ps-fade-in-animation {
-    -webkit-transition: all 0.7s ease-out;
-    -moz-transition: all 0.7s ease-out;
-    -o-transition: all 0.7s ease-out;
-    transition: all 0.7s ease-out;
+    -moz-transition: linear all 0.5s;
+    -o-transition: linear all 0.5s;
+    -webkit-transition: linear all 0.5s;
+    transition: linear all 0.5s;
 }
-
-    .ps-fade-in-animation.ng-hide {
-        opacity: 0;
-
-    }
+.ps-fade-in-animation.ng-hide {
+    opacity: 0;
+}

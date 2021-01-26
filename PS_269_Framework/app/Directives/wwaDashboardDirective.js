@@ -85,7 +85,7 @@ angular.module("app").directive("wwaDashboard", [function () {
             scope.widgets = [];
 
 
-            let autoDemoLoad = false;
+            let autoDemoLoad = true;
 
             if (autoDemoLoad) {
 

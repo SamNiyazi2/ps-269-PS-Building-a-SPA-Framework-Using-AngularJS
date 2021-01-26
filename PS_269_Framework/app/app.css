@@ -1,8 +1,8 @@
-﻿body {
+﻿
+body {
     background-color: #444;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
 }
-
 
 .container-fluid {
     padding: 0;
