@@ -43,8 +43,13 @@ angular.module("psDashboard").directive("psWidgetBody", ["$compile", "$modal", f
             }
 
 
+            // 01/26/2021 10:42 am - SSN - [20210126-0946] - [003] - M07-04 - Widget errors
 
-            scope.getBackupgroundImagestyle = function () {
+            scope.getBackupgroundImagestyle = function (simulateError) {
+
+                if (simulateError) {
+                    return {};
+                }
 
                 if (scope.selectedLocation && scope.selectedLocation.image) {
                     let tempValue2 = "url(/images/" + (scope.selectedLocation.image) + ")";

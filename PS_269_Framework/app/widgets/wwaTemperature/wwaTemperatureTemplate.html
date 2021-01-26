@@ -6,9 +6,9 @@
         <span class="www-temperature-title">Temp</span>
     </div>
 
-    <div class="wwa-temperature-body" ng-style="getBackupgroundImagestyle()">
+    <div class="wwa-temperature-body" ng-style="getBackupgroundImagestyle(simulateError)">
 
-        <div ng-if="!isLoaded">
+        <div ng-if="!isLoaded && !hasError">
             <i class="fa fa-refresh fa-2x fa-spin"></i>
         </div>
 
@@ -19,6 +19,15 @@
             <div class="wwa-temperature-degrees">
                 {{ selectedLocation.temperature }}º
             </div>
+        </div>
+
+        <div class="hasError" ng-if="hasError">
+            <h4>Error loading widget.</h4>
+            <button class="btn btn-primary" ng-click="doReload()">Reload</button>
+        </div>
+
+        <div style="position:relative;top:70px;width:100px;font-size:10px;background-color:white;">
+            <input type="checkbox" ng-model="simulateError" ng-click="loadLocation()" /> Simulate error
         </div>
     </div>
 

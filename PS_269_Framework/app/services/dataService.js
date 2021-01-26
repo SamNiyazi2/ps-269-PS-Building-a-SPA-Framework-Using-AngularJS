@@ -118,8 +118,16 @@ angular.module("app").factory("dataService", ["$timeout", function ($timeout) {
         return $timeout(() => locations, 500);
     }
 
-    var getLocation = function (id) {
+
+    // 01/26/2021 10:06 am - SSN - [20210126-0946] - [002] - M07-04 - Widget errors
+    var getLocation = function (id, simulateError) {
+
+      
         return $timeout(() => {
+
+            if (simulateError) {
+                throw new Error("Failed to run service - 20210126-1007");
+            }
             let _locations = locations.filter(r => r.id == id);
             return _locations.length == 1 ? _locations[0] : undefined;
         }, 2000);
