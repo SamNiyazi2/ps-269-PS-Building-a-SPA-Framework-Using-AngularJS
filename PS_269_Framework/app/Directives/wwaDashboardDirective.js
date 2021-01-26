@@ -3,13 +3,14 @@
 
 "use strict";
 
-angular.module("app").directive("wwaDashboard", [function () {
+angular.module("app").directive("wwaDashboard", ["$localStorage", function ($localStorage) {
 
     return {
         scope: {
 
         },
         template: '<ps-dashboard></ps-dashboard>',
+
         link: function (scope) {
 
             scope.dashboardTitle = "My first Dashboard";
@@ -82,12 +83,23 @@ angular.module("app").directive("wwaDashboard", [function () {
 
             ];
 
-            scope.widgets = [];
 
 
-            let autoDemoLoad = true;
+            let autoLoadForDemo = false; // Using $localStorage
 
-            if (autoDemoLoad) {
+
+            // 01/26/2021 11:27 am - SSN - [20210126-1110] - [001] - M07-05 - Save and load dashboard layout
+
+            scope.widgets = $localStorage.widgets || [];
+
+            scope.$watch('widgets', () => {
+
+                $localStorage.widgets = scope.widgets;
+            }, true); // true for deep watch
+
+
+
+            if (autoLoadForDemo) {
 
                 let xCounter = 0;
 
