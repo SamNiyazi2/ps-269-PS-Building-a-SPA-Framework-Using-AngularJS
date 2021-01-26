@@ -32,13 +32,9 @@ angular.module("psDashboard").directive("psWidgetBody", ["$compile", "$modal", f
             // 01/25/2021 03:44 pm - SSN - [20210125-1523] - [001] - M06-11 - Showing a widget settings dialog
             scope.settings = () => {
 
-                console.log('20210125-1545 - psWidgetBodyDirective - settings');
-                console.log(scope.item);
-
-
                 var options = {
                     templateUrl: scope.item.widgetSettings.templateUrl,
-                    constroller: scope.item.widgetSettings.controller,
+                    controller: scope.item.widgetSettings.controller,
                     scope: scope
                 };
 
@@ -46,16 +42,21 @@ angular.module("psDashboard").directive("psWidgetBody", ["$compile", "$modal", f
 
             }
 
-
-
-
+             
 
             scope.getBackupgroundImagestyle = function () {
+                  
+                if (scope.selectedLocation && scope.selectedLocation.image) {
+                    let tempValue2 = "url(/images/" + (scope.selectedLocation.image) + ")";
+                    return { "background-image": tempValue2 };
+                }
 
-                if (!scope.selectedEmployee) return {};
-                if (!scope.selectedEmployee.image) return {};
-                let tempValue2 = "url(/images/" + (scope.selectedEmployee.image) + ")";
-                return { "background-image": tempValue2 };
+                if (scope.selectedEmployee && scope.selectedEmployee.image) {
+                    let tempValue2 = "url(/images/" + (scope.selectedEmployee.image) + ")";
+                    return { "background-image": tempValue2 };
+                }
+
+                return {};
 
             }
 
