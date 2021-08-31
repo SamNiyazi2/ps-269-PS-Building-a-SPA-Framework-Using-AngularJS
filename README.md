@@ -1,5 +1,5 @@
 
-StarterCode branch from Plurasight course: [Building a SPA Framework Using AngularJS](https://app.pluralsight.com/library/courses/building-spa-framework-angularjs/table-of-contents) 
+StarterCode branch from Pluralsight course: [Building a SPA Framework Using AngularJS](https://app.pluralsight.com/library/courses/building-spa-framework-angularjs/table-of-contents) 
 
 Author: [Mark Zamoyta](https://app.pluralsight.com/profile/author/mark-zamoyta) 
 
